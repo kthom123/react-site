@@ -1,5 +1,3 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
 // import './index.css';
 // import App from './App';
 // import reportWebVitals from './reportWebVitals';
@@ -18,18 +16,28 @@ import ReactDOM from 'react-dom';
 // // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 // reportWebVitals();
 
-const page = (
-  <div>
-    <img src="./logo192.png" width="40px" alt="react site"/>
-    <h1>Fun Facts About React</h1>
-    <ul>
-      <li>Was first released in 2013</li>
-      <li>Was originally created by Jordan Walke</li>
-      <li>Has well over 100K stars on GitHub</li>
-      <li>Is maintained by Facebook</li>
-      <li>Powers thousands of enterprise apps, including mobile apps</li>
-    </ul>
-  </div>
-)
+import React from "react"
+import ReactDOM from "react-dom"
 
-ReactDOM.render(page, document.getElementById("root"))
+function Page() {
+    return (
+      <div>
+        <header>
+            <nav>
+                <img src="./logo192.png" width="40px" alt="site" />
+            </nav>
+        </header>
+        <h1>Reasons I'm excited to learn React</h1>
+        <ol>
+          <li>React is awesome</li>
+          <li>We need it for a job</li>
+          <li>I want to be a better developer</li>
+        </ol>
+        <footer>
+          <small>© 2022 Thomas development. All rights reserved.</small>
+        </footer>
+      </div>
+    )
+}
+
+ReactDOM.render(<Page />, document.getElementById("root"))
